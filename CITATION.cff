@@ -1,0 +1,51 @@
+# This CITATION.cff file was generated with cffinit.
+
+cff-version: 1.2.0
+title: 'OCDO/asmo: v0.0.1'
+message: >-
+  Please cite this ontology using the metadata from
+  "preferred-citation".
+type: software
+authors:
+  - given-names: Abril
+    family-names: Azocar Guzman
+    orcid: 'https://orcid.org/0000-0001-7564-7990'
+    email: a.azocar.guzman@fz-juelich.de
+    affiliation: Forschungszentrum Juelich (FZJ)
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.10805592
+    description: Version 0.0.1 of the ontology in Zenodo
+  - type: url
+    value: 'https://purls.helmholtz-metadaten.de/mmss/asmo'
+    description: Ontology IRI
+repository-code: 'https://github.com/OCDO/asmo'
+abstract: >-
+  Atomistic Simulation Methods Ontology (ASMO) is an ontology that aims to define the concepts needed to describe commonly used atomic scale simulation methods, i.e. density functional theory, molecular dynamics, Monte Carlo methods, etc. ASMO uses the Provenance Ontology (PROV-O) to describe the simulation process.
+keywords:
+  - ontology
+  - computational materials science
+  - materials informatics
+  - semantics
+  - atomistic simulations
+  - density functional theory
+  - molecular dynamics
+  - simulation workflows
+license: CC-BY-4.0
+commit: efa1edc8b78f3655a5c3c005e38add5b763e4339
+version: v0.0.1
+date-released: '2024-03-11'
+preferred-citation:
+  authors:
+    - family-names: Azocar Guzman
+      given-names: Abril
+    - family-names: Menon
+      given-names: Sarath
+    - family-names: Hofmann
+      given-names: Volker
+    - family-names: Sandfeld
+      given-names: Stefan
+  title: "Atomistic Simulation Methods Ontology (ASMO)"
+  type: generic
+  year: 2024
+  url: https://purls.helmholtz-metadaten.de/mmss/asmo
