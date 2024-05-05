@@ -868,7 +868,9 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
 
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/StructureOptimization">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
-        <rdfs:label>Structure Optimization</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Energy calculation is an activity where the energy of the system is computed within the given optimization constraints.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This activity does not specify the way the energy is calculated, it can be used to refer to a rigid calculation or also to energy minimization or optimization. See RelaxationDOF class for specifics about the constraints.</rdfs:comment>
+        <rdfs:label>Energy Calculation</rdfs:label>
     </owl:Class>
     
 
