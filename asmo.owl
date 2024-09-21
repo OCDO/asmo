@@ -688,6 +688,7 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
     <owl:DatatypeProperty rdf:about="http://purls.helmholtz-metadaten.de/asmo/hasAddend">
         <rdfs:domain rdf:resource="http://purls.helmholtz-metadaten.de/asmo/Addition"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A data property linking an addition with the addend value.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has addend</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -698,6 +699,7 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
     <owl:DatatypeProperty rdf:about="http://purls.helmholtz-metadaten.de/asmo/hasDifference">
         <rdfs:domain rdf:resource="http://purls.helmholtz-metadaten.de/asmo/Subtraction"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A data property linking a subtraction with the difference value.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has difference</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -708,6 +710,7 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
     <owl:DatatypeProperty rdf:about="http://purls.helmholtz-metadaten.de/asmo/hasDividend">
         <rdfs:domain rdf:resource="http://purls.helmholtz-metadaten.de/asmo/Division"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A data property linking a division with the dividend value.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has dividend</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -718,6 +721,7 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
     <owl:DatatypeProperty rdf:about="http://purls.helmholtz-metadaten.de/asmo/hasDivisor">
         <rdfs:domain rdf:resource="http://purls.helmholtz-metadaten.de/asmo/Division"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A data property linking a division with the divisor value.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has divisor</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -728,6 +732,7 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
     <owl:DatatypeProperty rdf:about="http://purls.helmholtz-metadaten.de/asmo/hasFactor">
         <rdfs:domain rdf:resource="http://purls.helmholtz-metadaten.de/asmo/Multiplication"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A data property linking a multiplication with the factor value.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has factor</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -738,6 +743,7 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
     <owl:DatatypeProperty rdf:about="http://purls.helmholtz-metadaten.de/asmo/hasMinuend">
         <rdfs:domain rdf:resource="http://purls.helmholtz-metadaten.de/asmo/Subtraction"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A data property linking a subtraction with the minuend value.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has minuend</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -748,6 +754,7 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
     <owl:DatatypeProperty rdf:about="http://purls.helmholtz-metadaten.de/asmo/hasProduct">
         <rdfs:domain rdf:resource="http://purls.helmholtz-metadaten.de/asmo/Multiplication"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A data property linking a multiplication with the product value.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has product</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -758,6 +765,7 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
     <owl:DatatypeProperty rdf:about="http://purls.helmholtz-metadaten.de/asmo/hasQuotient">
         <rdfs:domain rdf:resource="http://purls.helmholtz-metadaten.de/asmo/Division"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A data property linking a division with the quotient value.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has quotient</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -768,6 +776,7 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
     <owl:DatatypeProperty rdf:about="http://purls.helmholtz-metadaten.de/asmo/hasSubtrahend">
         <rdfs:domain rdf:resource="http://purls.helmholtz-metadaten.de/asmo/Subtraction"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A data property linking a subtraction with the subtrahend value.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has subtrahend</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -778,6 +787,7 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
     <owl:DatatypeProperty rdf:about="http://purls.helmholtz-metadaten.de/asmo/hasSum">
         <rdfs:domain rdf:resource="http://purls.helmholtz-metadaten.de/asmo/Addition"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A data property linking an addition with the sum value.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has sum</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -929,7 +939,10 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
 
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/EquationOfStateFit">
         <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/Simulation"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Equation of state is a relationship between the volume of a body and the pressure to which it is subjected. There are multiple proposed equations for fitting the values of the energy as a function of the volume obtained from ab-initio and molecular dynamics calculations.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Equation of State Fit</rdfs:label>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EOS</skos:altLabel>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Equation of State</skos:altLabel>
     </owl:Class>
     
 
@@ -1109,6 +1122,7 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
 
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/Rotation">
         <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/SpatialTransformation"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rotation is a type of spatial transformation described by the motion of an object around a point or axis.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rotation</rdfs:label>
     </owl:Class>
     
@@ -1199,6 +1213,7 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
 
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/Translation">
         <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/SpatialTransformation"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Translation is a type of spatial transformation described by the motion of every point of an object by the same distance in a given direction.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Translation</rdfs:label>
     </owl:Class>
     
@@ -1420,6 +1435,7 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
 
     <owl:NamedIndividual rdf:about="http://purls.helmholtz-metadaten.de/asmo/AddAtom">
         <rdf:type rdf:resource="http://purls.helmholtz-metadaten.de/asmo/PointDefectCreation"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Substitution of an atom to create an impurity.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Add Atom</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1439,6 +1455,9 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
 
     <owl:NamedIndividual rdf:about="http://purls.helmholtz-metadaten.de/asmo/BirchMurnaghan">
         <rdf:type rdf:resource="http://purls.helmholtz-metadaten.de/asmo/EquationOfStateFit"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Equation of state proposed by Albert Francis Birch in 1947, based on the Murnaghan equation.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://doi.org/10.1103/PhysRev.71.809</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Birch%E2%80%93Murnaghan_equation_of_state</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Birch-Murnaghan</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1480,6 +1499,7 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
 
     <owl:NamedIndividual rdf:about="http://purls.helmholtz-metadaten.de/asmo/DeleteAtom">
         <rdf:type rdf:resource="http://purls.helmholtz-metadaten.de/asmo/PointDefectCreation"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deletion of an atom to create a vacancy.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Delete Atom</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1537,6 +1557,9 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
 
     <owl:NamedIndividual rdf:about="http://purls.helmholtz-metadaten.de/asmo/Murnaghan">
         <rdf:type rdf:resource="http://purls.helmholtz-metadaten.de/asmo/EquationOfStateFit"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Equation of state proposed by Francis D. Murnaghan in 1944. The Murnaghan equation is derived, under certain assumptions, from the equations of continuum mechanics. It involves two adjustable parameters: the modulus of incompressibility K0 and its first derivative with respect to the pressure, K′0, both measured at ambient pressure.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&quot;Finite Deformation of an Elastic Solid&quot;, Applied mathematics series, ISSN 0272-1643</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Murnaghan_equation_of_state</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Murnaghan</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1546,6 +1569,7 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
 
     <owl:NamedIndividual rdf:about="http://purls.helmholtz-metadaten.de/asmo/SubstituteAtom">
         <rdf:type rdf:resource="http://purls.helmholtz-metadaten.de/asmo/PointDefectCreation"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Substitution of an atom to create an impurity.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Substitute Atom</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1555,6 +1579,7 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
 
     <owl:NamedIndividual rdf:about="http://purls.helmholtz-metadaten.de/asmo/ThirdOrderPolynomialFit">
         <rdf:type rdf:resource="http://purls.helmholtz-metadaten.de/asmo/EquationOfStateFit"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EOS calculation using a third-order polynomial fit.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Third-order polynomial fit</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1564,7 +1589,11 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
 
     <owl:NamedIndividual rdf:about="http://purls.helmholtz-metadaten.de/asmo/Vinet">
         <rdf:type rdf:resource="http://purls.helmholtz-metadaten.de/asmo/EquationOfStateFit"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Equation of state proposed by Pascal Vinet in 1987. It is a modification of the Birch–Murnaghan equation of state.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://doi.org/10.1103/PhysRevB.35.1945</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Rose%E2%80%93Vinet_equation_of_state</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vinet</rdfs:label>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">Rose–Vinet</skos:altLabel>
     </owl:NamedIndividual>
 </rdf:RDF>
 
