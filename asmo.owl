@@ -1012,6 +1012,10 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
 
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/BulkModulus">
         <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/cmso/CalculatedProperty"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bulk modulus is a property that quantifies a material&apos;s resistance to uniform compression.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bulk Modulus</rdfs:label>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">B</skos:altLabel>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K</skos:altLabel>
     </owl:Class>
     
 
@@ -1117,6 +1121,18 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
         <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://qudt.org/vocab/quantitykind/Force</rdfs:seeAlso>
         <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://si-digital-framework.org/quantities/FORC</rdfs:seeAlso>
         <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">F</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purls.helmholtz-metadaten.de/asmo/FormationEnergy -->
+
+    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/FormationEnergy">
+        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/Energy"/>
+        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/cmso/CalculatedProperty"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Formation energy is a property that quantifies the energy required to create a defect, molecule, or material from its constituent atoms or molecules in their standard states.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">It is typically calculated as the difference between the total energy of the system containing the defect or structure and the total energy of the isolated constituent atoms or molecules.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Formation Energy</rdfs:label>
     </owl:Class>
     
 
@@ -1394,6 +1410,18 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
     
 
 
+    <!-- http://purls.helmholtz-metadaten.de/asmo/PoissonsRatio -->
+
+    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/PoissonsRatio">
+        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/cmso/CalculatedProperty"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Poisson&apos;s ratio is a dimensionless property that quantifies the Poisson effect, which describes the deformation (expansion or contraction) of a material in the direction perpendicular to the applied load. It is the ratio of the transverse strain to the axial strain in a material subjected to uniaxial stress.</obo:IAO_0000115>
+        <obo:OBCS_0000221 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ν = - transverse_strain / axial_strain</obo:OBCS_0000221>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Poisson&apos;s Ratio</rdfs:label>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ν</skos:altLabel>
+    </owl:Class>
+    
+
+
     <!-- http://purls.helmholtz-metadaten.de/asmo/PotentialEnergy -->
 
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/PotentialEnergy">
@@ -1454,6 +1482,18 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/Shear">
         <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/SpatialTransformation"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shear</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purls.helmholtz-metadaten.de/asmo/ShearModulus -->
+
+    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/ShearModulus">
+        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/cmso/CalculatedProperty"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shear modulus, also known as the modulus of rigidity, is a measure of a material&apos;s resistance to shear deformation. It is defined as the ratio of shear stress (force per unit area applied parallel to the surface) to shear strain in the linear elastic region of the material.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shear Modulus</rdfs:label>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G</skos:altLabel>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Modulus of rigidity</skos:altLabel>
     </owl:Class>
     
 
@@ -1637,6 +1677,7 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
 
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/TotalMagneticMoment">
         <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/cmso/CalculatedProperty"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Total magnetic moment is a property that quantifies the overall strength and direction of the magnetic field produced by a system, calculated as the vector sum of all individual magnetic moments contributed by its atoms, ions, or molecules.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Total Magnetic Moment</rdfs:label>
     </owl:Class>
     
@@ -1670,6 +1711,17 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/VolumeRange">
         <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/InputParameter"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Volume Range</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purls.helmholtz-metadaten.de/asmo/YoungsModulus -->
+
+    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/YoungsModulus">
+        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/cmso/CalculatedProperty"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Young&apos;s modulus is a property that quantifies the stiffness of a material, defined as the ratio of tensile stress (force per unit area) to tensile strain (proportional deformation in length) in the linear elastic region of a material&apos;s stress-strain curve.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Young’s Modulus</rdfs:label>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E</skos:altLabel>
     </owl:Class>
     
 
