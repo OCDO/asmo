@@ -1001,7 +1001,9 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
     <!-- http://purls.helmholtz-metadaten.de/asmo/Barostat -->
 
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/Barostat">
-        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/InputParameter"/>
+        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/SimulationAlgorithm"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Barostat is an algorithm used in molecular dynamics simulations to control system pressure.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Barostat</rdfs:label>
     </owl:Class>
     
 
@@ -1089,7 +1091,7 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
     <!-- http://purls.helmholtz-metadaten.de/asmo/EquationOfStateFit -->
 
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/EquationOfStateFit">
-        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/Simulation"/>
+        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/SimulationAlgorithm"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Equation of state is a relationship between the volume of a body and the pressure to which it is subjected. There are multiple proposed equations for fitting the values of the energy as a function of the volume obtained from ab-initio and molecular dynamics calculations.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Equation of State Fit</rdfs:label>
         <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EOS</skos:altLabel>
@@ -1352,7 +1354,7 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
     <!-- http://purls.helmholtz-metadaten.de/asmo/QuasiharmonicModel -->
 
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/QuasiharmonicModel">
-        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/Simulation"/>
+        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/SimulationAlgorithm"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Quasi-harmonic Model</rdfs:label>
     </owl:Class>
     
@@ -1394,6 +1396,15 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In computational materials science, a simulation refers to the production of a computer model of a material system, for the purpose of imitating a process over time.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Simulation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purls.helmholtz-metadaten.de/asmo/SimulationAlgorithm -->
+
+    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/SimulationAlgorithm">
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A simulation algorithm is a computational method used to represent and approximate a system&apos;s behavior based on mathematical models and input parameters.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Simulation Algorithm</rdfs:label>
     </owl:Class>
     
 
@@ -1490,7 +1501,7 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
     <!-- http://purls.helmholtz-metadaten.de/asmo/ThermodynamicIntegration -->
 
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/ThermodynamicIntegration">
-        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/Simulation"/>
+        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/SimulationAlgorithm"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thermodynamic Integration</rdfs:label>
     </owl:Class>
     
@@ -1499,7 +1510,8 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
     <!-- http://purls.helmholtz-metadaten.de/asmo/Thermostat -->
 
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/Thermostat">
-        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/InputParameter"/>
+        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/SimulationAlgorithm"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thermostat is an algorithm used in molecular dynamics simulations to control the system&apos;s temperature.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thermostat</rdfs:label>
     </owl:Class>
     
