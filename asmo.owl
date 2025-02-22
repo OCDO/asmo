@@ -1001,7 +1001,9 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
     <!-- http://purls.helmholtz-metadaten.de/asmo/Barostat -->
 
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/Barostat">
-        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/InputParameter"/>
+        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/SimulationAlgorithm"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Barostat is an algorithm used in molecular dynamics simulations to control system pressure.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Barostat</rdfs:label>
     </owl:Class>
     
 
@@ -1010,6 +1012,10 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
 
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/BulkModulus">
         <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/cmso/CalculatedProperty"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bulk modulus is a property that quantifies a material&apos;s resistance to uniform compression.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bulk Modulus</rdfs:label>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">B</skos:altLabel>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K</skos:altLabel>
     </owl:Class>
     
 
@@ -1027,7 +1033,7 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
 
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/DensityFunctionalTheory">
         <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/ComputationalMethod"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Density functional theory is a computational method used to study the electronic structure and ground state of atoms, molecules, and, solids. This technique determines the properties of a many-electron system thorugh functionals of the spatially dependent electron density.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Density functional theory is a computational method used to study the electronic structure and ground state of atoms, molecules, and, solids. This technique determines the properties of a many-electron system through functionals of the spatially dependent electron density.</obo:IAO_0000115>
         <rdfs:label>Density Functional Theory</rdfs:label>
         <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DFT</skos:altLabel>
     </owl:Class>
@@ -1038,7 +1044,7 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
 
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/Division">
         <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/MathematicalOperation"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An arithmetic operation by which the quotient of two numbers (dividen and divisor) is computed, symbolized by / or ÷.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An arithmetic operation by which the quotient of two numbers (dividend and divisor) is computed, symbolized by / or ÷.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Division</rdfs:label>
     </owl:Class>
     
@@ -1048,7 +1054,7 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
 
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/EmbeddedAtomModel">
         <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/InteratomicPotential"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Embedded Atom Model is an many-body interatomic potential which contains two contributions to the potential energy: the embedding term, which describes the energy required to embed an atom into an electron cloud, and the pair-wise interaction.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Embedded Atom Model is a many-body interatomic potential which contains two contributions to the potential energy: the embedding term, which describes the energy required to embed an atom into an electron cloud, and the pair-wise interaction.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://doi.org/10.1103/PhysRevLett.50.1285</obo:IAO_0000119>
         <obo:OBCS_0000221 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E(r) = \sum_i F_i (\rho_i(r_i)) + 1/2 \sum_{i,j} \varphi(r_{i,j})</obo:OBCS_0000221>
         <rdfs:label>Embedded Atom Model</rdfs:label>
@@ -1061,7 +1067,12 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
 
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/Energy">
         <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/PhysicalQuantity"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Energy is a physical quantity characterizing the ability of a system to do work.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://doi.org/10.1351/goldbook.E02101</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Energy</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://qudt.org/vocab/quantitykind/Energy</rdfs:seeAlso>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://si-digital-framework.org/quantities/ENGY</rdfs:seeAlso>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E</skos:altLabel>
     </owl:Class>
     
 
@@ -1089,11 +1100,39 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
     <!-- http://purls.helmholtz-metadaten.de/asmo/EquationOfStateFit -->
 
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/EquationOfStateFit">
-        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/Simulation"/>
+        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/SimulationAlgorithm"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Equation of state is a relationship between the volume of a body and the pressure to which it is subjected. There are multiple proposed equations for fitting the values of the energy as a function of the volume obtained from ab-initio and molecular dynamics calculations.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Equation of State Fit</rdfs:label>
         <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EOS</skos:altLabel>
         <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Equation of State</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purls.helmholtz-metadaten.de/asmo/Force -->
+
+    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/Force">
+        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/PhysicalQuantity"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Force is a physical quantity that represents an interaction that causes mass to accelerate. It is a vector quantity, having both magnitude and direction.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://doi.org/10.1351/goldbook.F02480</obo:IAO_0000119>
+        <obo:OBCS_0000221 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">F = ma</obo:OBCS_0000221>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">According to Newton&apos;s second law of motion, force is the product of mass and acceleration (F = ma).</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Force</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://qudt.org/vocab/quantitykind/Force</rdfs:seeAlso>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://si-digital-framework.org/quantities/FORC</rdfs:seeAlso>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">F</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purls.helmholtz-metadaten.de/asmo/FormationEnergy -->
+
+    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/FormationEnergy">
+        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/Energy"/>
+        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/cmso/CalculatedProperty"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Formation energy is a property that quantifies the energy required to create a defect, molecule, or material from its constituent atoms or molecules in their standard states.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">It is typically calculated as the difference between the total energy of the system containing the defect or structure and the total energy of the isolated constituent atoms or molecules.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Formation Energy</rdfs:label>
     </owl:Class>
     
 
@@ -1103,6 +1142,30 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/FreeEnergy">
         <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/Energy"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Free Energy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purls.helmholtz-metadaten.de/asmo/GibbsFreeEnergy -->
+
+    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/GibbsFreeEnergy">
+        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/ThermodynamicFreeEnergy"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gibbs free energy is a thermodynamic potential that measures the maximum amount of work that may be performed by a thermodynamically closed system at constant temperature and pressure.</obo:IAO_0000115>
+        <obo:OBCS_0000221 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G=H-TS</obo:OBCS_0000221>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gibbs Free Energy</rdfs:label>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purls.helmholtz-metadaten.de/asmo/HelmholtzFreeEnergy -->
+
+    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/HelmholtzFreeEnergy">
+        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/ThermodynamicFreeEnergy"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Helmholtz free energy is a thermodynamic potential that measures the useful work obtainable from a closed thermodynamic system at a constant temperature.</obo:IAO_0000115>
+        <obo:OBCS_0000221 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">F = U-TS</obo:OBCS_0000221>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Helmholtz Free Energy</rdfs:label>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">F</skos:altLabel>
     </owl:Class>
     
 
@@ -1140,6 +1203,9 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
 
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/KineticEnergy">
         <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/Energy"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kinetic energy is the energy due to motion.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://doi.org/10.1351/goldbook.K03402</obo:IAO_0000119>
+        <obo:OBCS_0000221 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E_k = (mv^2)/2</obo:OBCS_0000221>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kinetic Energy</rdfs:label>
     </owl:Class>
     
@@ -1160,7 +1226,13 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
 
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/Length">
         <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/PhysicalQuantity"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Length is a physical quantity that measures the distance between two points.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://doi.org/10.1351/goldbook.L03498</obo:IAO_0000119>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Length is can also be understood to mean the longest dimension of an object.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Length</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://qudt.org/vocab/quantitykind/Length</rdfs:seeAlso>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://si-digital-framework.org/quantities/LENG</rdfs:seeAlso>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">l</skos:altLabel>
     </owl:Class>
     
 
@@ -1197,7 +1269,12 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
 
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/Mass">
         <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/PhysicalQuantity"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mass is a physical quantity that defines the amount of matter of a body. Mass is force divided by acceleration.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://doi.org/10.1351/goldbook.M03709</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mass</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://qudt.org/vocab/quantitykind/Mass</rdfs:seeAlso>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://si-digital-framework.org/quantities/MASS</rdfs:seeAlso>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">m</skos:altLabel>
     </owl:Class>
     
 
@@ -1316,6 +1393,8 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
     <!-- http://purls.helmholtz-metadaten.de/asmo/PhysicalQuantity -->
 
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/PhysicalQuantity">
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Attribute of a phenomenon, body or substance that may be distinguished qualitatively and determined quantitatively.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://doi.org/10.1351/goldbook.Q04982</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Physical Quantity</rdfs:label>
     </owl:Class>
     
@@ -1331,10 +1410,24 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
     
 
 
+    <!-- http://purls.helmholtz-metadaten.de/asmo/PoissonsRatio -->
+
+    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/PoissonsRatio">
+        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/cmso/CalculatedProperty"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Poisson&apos;s ratio is a dimensionless property that quantifies the Poisson effect, which describes the deformation (expansion or contraction) of a material in the direction perpendicular to the applied load. It is the ratio of the transverse strain to the axial strain in a material subjected to uniaxial stress.</obo:IAO_0000115>
+        <obo:OBCS_0000221 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ν = - transverse_strain / axial_strain</obo:OBCS_0000221>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Poisson&apos;s Ratio</rdfs:label>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ν</skos:altLabel>
+    </owl:Class>
+    
+
+
     <!-- http://purls.helmholtz-metadaten.de/asmo/PotentialEnergy -->
 
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/PotentialEnergy">
         <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/Energy"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Potential energy is the energy of position or orientation in a field of force.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://doi.org/10.1351/goldbook.P04778</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Potential Energy</rdfs:label>
     </owl:Class>
     
@@ -1344,7 +1437,12 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
 
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/Pressure">
         <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/PhysicalQuantity"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pressure is a physical quantity that expresses the normal force acting on a surface divided by the area of that surface.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://doi.org/10.1351/goldbook.P04819</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pressure</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://qudt.org/vocab/quantitykind/Pressure</rdfs:seeAlso>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://si-digital-framework.org/quantities/PRES</rdfs:seeAlso>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P</skos:altLabel>
     </owl:Class>
     
 
@@ -1352,7 +1450,7 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
     <!-- http://purls.helmholtz-metadaten.de/asmo/QuasiharmonicModel -->
 
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/QuasiharmonicModel">
-        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/Simulation"/>
+        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/SimulationAlgorithm"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Quasi-harmonic Model</rdfs:label>
     </owl:Class>
     
@@ -1388,6 +1486,18 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
     
 
 
+    <!-- http://purls.helmholtz-metadaten.de/asmo/ShearModulus -->
+
+    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/ShearModulus">
+        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/cmso/CalculatedProperty"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shear modulus, also known as the modulus of rigidity, is a measure of a material&apos;s resistance to shear deformation. It is defined as the ratio of shear stress (force per unit area applied parallel to the surface) to shear strain in the linear elastic region of the material.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shear Modulus</rdfs:label>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G</skos:altLabel>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Modulus of rigidity</skos:altLabel>
+    </owl:Class>
+    
+
+
     <!-- http://purls.helmholtz-metadaten.de/asmo/Simulation -->
 
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/Simulation">
@@ -1398,11 +1508,11 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
     
 
 
-    <!-- http://purls.helmholtz-metadaten.de/asmo/SimulationCellLength -->
+    <!-- http://purls.helmholtz-metadaten.de/asmo/SimulationAlgorithm -->
 
-    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/SimulationCellLength">
-        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/Length"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Simulation Cell Length</rdfs:label>
+    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/SimulationAlgorithm">
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A simulation algorithm is a computational method used to represent and approximate a system&apos;s behavior based on mathematical models and input parameters.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Simulation Algorithm</rdfs:label>
     </owl:Class>
     
 
@@ -1416,10 +1526,21 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
     
 
 
+    <!-- http://purls.helmholtz-metadaten.de/asmo/SimulationRunTime -->
+
+    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/SimulationRunTime">
+        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/Time"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Simulation run time is the actual elapsed time taken to execute a simulation on a computing system.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Simulation Run Time</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purls.helmholtz-metadaten.de/asmo/SimulationTime -->
 
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/SimulationTime">
         <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/Time"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Simulation time is the time that progresses within a simulation, independent of real-world time, used to model and analyze the simulated system&apos;s behavior.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Simulation Time</rdfs:label>
     </owl:Class>
     
@@ -1440,7 +1561,7 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
     <!-- http://purls.helmholtz-metadaten.de/asmo/StatisticalEnsemble -->
 
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/StatisticalEnsemble">
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Statistical Ensemble is a collection of points in phase space. The points are distributed according to a probability density, which is determined by the chosen fixed macroscopic parameters (NPT, NVT, etc.). Each point represents a typical system at any particular instant of time.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Statistical Ensemble is a collection of points in phase space. The points are distributed according to a probability density, which is determined by the chosen fixed macroscopic parameters (NPT, NVT, etc.). Each point represents a typical system at any particular instant of time.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN-13: 9780192524706</obo:IAO_0000119>
         <rdfs:label>Statistical Ensemble</rdfs:label>
     </owl:Class>
@@ -1482,7 +1603,20 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
 
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/Temperature">
         <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/PhysicalQuantity"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Temperature is a physical quantity that expresses the average measure of the kinetic energy of a system of particles.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Temperature</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://qudt.org/vocab/quantitykind/Temperature</rdfs:seeAlso>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">T</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purls.helmholtz-metadaten.de/asmo/ThermodynamicFreeEnergy -->
+
+    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/ThermodynamicFreeEnergy">
+        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/Energy"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thermodynamic free energy is the energy in a physical system that can be converted to do work.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thermodynamic Free Energy</rdfs:label>
     </owl:Class>
     
 
@@ -1490,7 +1624,7 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
     <!-- http://purls.helmholtz-metadaten.de/asmo/ThermodynamicIntegration -->
 
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/ThermodynamicIntegration">
-        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/Simulation"/>
+        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/SimulationAlgorithm"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thermodynamic Integration</rdfs:label>
     </owl:Class>
     
@@ -1499,7 +1633,8 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
     <!-- http://purls.helmholtz-metadaten.de/asmo/Thermostat -->
 
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/Thermostat">
-        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/InputParameter"/>
+        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/SimulationAlgorithm"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thermostat is an algorithm used in molecular dynamics simulations to control the system&apos;s temperature.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thermostat</rdfs:label>
     </owl:Class>
     
@@ -1509,7 +1644,12 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
 
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/Time">
         <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/PhysicalQuantity"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Time is a base quantity in the measuring system upon which SI is based used to sequence and measure duration of events.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://doi.org/10.1351/goldbook.T06375</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Time</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://qudt.org/vocab/quantitykind/Time</rdfs:seeAlso>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://si-digital-framework.org/quantities/TIME</rdfs:seeAlso>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">t</skos:altLabel>
     </owl:Class>
     
 
@@ -1527,6 +1667,7 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
 
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/TotalEnergy">
         <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/Energy"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In mechanics, it is the sum of potential energy and kinetic energy.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Total Energy</rdfs:label>
     </owl:Class>
     
@@ -1536,6 +1677,7 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
 
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/TotalMagneticMoment">
         <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/cmso/CalculatedProperty"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Total magnetic moment is a property that quantifies the overall strength and direction of the magnetic field produced by a system, calculated as the vector sum of all individual magnetic moments contributed by its atoms, ions, or molecules.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Total Magnetic Moment</rdfs:label>
     </owl:Class>
     
@@ -1555,7 +1697,11 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
 
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/Volume">
         <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/PhysicalQuantity"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Volume is a physical quantity that measures the three-dimensional space contained within an object or shape.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Volume</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://qudt.org/vocab/quantitykind/Volume</rdfs:seeAlso>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://si-digital-framework.org/quantities/VOLU</rdfs:seeAlso>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">V</skos:altLabel>
     </owl:Class>
     
 
@@ -1565,6 +1711,17 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/VolumeRange">
         <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/InputParameter"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Volume Range</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purls.helmholtz-metadaten.de/asmo/YoungsModulus -->
+
+    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/YoungsModulus">
+        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/cmso/CalculatedProperty"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Young&apos;s modulus is a property that quantifies the stiffness of a material, defined as the ratio of tensile stress (force per unit area) to tensile strain (proportional deformation in length) in the linear elastic region of a material&apos;s stress-strain curve.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Young’s Modulus</rdfs:label>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E</skos:altLabel>
     </owl:Class>
     
 
