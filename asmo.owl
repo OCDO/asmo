@@ -1027,7 +1027,7 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
 
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/DensityFunctionalTheory">
         <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/ComputationalMethod"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Density functional theory is a computational method used to study the electronic structure and ground state of atoms, molecules, and, solids. This technique determines the properties of a many-electron system thorugh functionals of the spatially dependent electron density.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Density functional theory is a computational method used to study the electronic structure and ground state of atoms, molecules, and, solids. This technique determines the properties of a many-electron system through functionals of the spatially dependent electron density.</obo:IAO_0000115>
         <rdfs:label>Density Functional Theory</rdfs:label>
         <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DFT</skos:altLabel>
     </owl:Class>
@@ -1038,7 +1038,7 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
 
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/Division">
         <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/MathematicalOperation"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An arithmetic operation by which the quotient of two numbers (dividen and divisor) is computed, symbolized by / or ÷.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An arithmetic operation by which the quotient of two numbers (dividend and divisor) is computed, symbolized by / or ÷.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Division</rdfs:label>
     </owl:Class>
     
@@ -1048,7 +1048,7 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
 
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/EmbeddedAtomModel">
         <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/InteratomicPotential"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Embedded Atom Model is an many-body interatomic potential which contains two contributions to the potential energy: the embedding term, which describes the energy required to embed an atom into an electron cloud, and the pair-wise interaction.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Embedded Atom Model is a many-body interatomic potential which contains two contributions to the potential energy: the embedding term, which describes the energy required to embed an atom into an electron cloud, and the pair-wise interaction.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://doi.org/10.1103/PhysRevLett.50.1285</obo:IAO_0000119>
         <obo:OBCS_0000221 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E(r) = \sum_i F_i (\rho_i(r_i)) + 1/2 \sum_{i,j} \varphi(r_{i,j})</obo:OBCS_0000221>
         <rdfs:label>Embedded Atom Model</rdfs:label>
@@ -1440,7 +1440,7 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
     <!-- http://purls.helmholtz-metadaten.de/asmo/StatisticalEnsemble -->
 
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/StatisticalEnsemble">
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Statistical Ensemble is a collection of points in phase space. The points are distributed according to a probability density, which is determined by the chosen fixed macroscopic parameters (NPT, NVT, etc.). Each point represents a typical system at any particular instant of time.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Statistical Ensemble is a collection of points in phase space. The points are distributed according to a probability density, which is determined by the chosen fixed macroscopic parameters (NPT, NVT, etc.). Each point represents a typical system at any particular instant of time.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN-13: 9780192524706</obo:IAO_0000119>
         <rdfs:label>Statistical Ensemble</rdfs:label>
     </owl:Class>
