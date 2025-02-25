@@ -1092,6 +1092,7 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
 
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/EnergyCutoff">
         <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/InputParameter"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Energy cutoff is the input parameter that defines the maximum kinetic energy of plane waves included in the basis set for electronic structure calculations.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Energy Cutoff</rdfs:label>
     </owl:Class>
     
@@ -1194,6 +1195,7 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
 
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/KPointMesh">
         <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/InputParameter"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K-Point mesh type is an input parameter that indicates how the Bloch vectors (k points) used to sample the Brillouin zone are provided.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KPoint Mesh</rdfs:label>
     </owl:Class>
     
@@ -1365,7 +1367,9 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
     <!-- http://purls.helmholtz-metadaten.de/asmo/NumberOfIonicSteps -->
 
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/NumberOfIonicSteps">
+        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/InputParameter"/>
         <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/OutputParameter"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Number of ionic steps is a simulation parameter refers to the total iterations performed in a simulation to update atomic positions based on forces until convergence is reached.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Number Of Ionic Steps</rdfs:label>
     </owl:Class>
     
@@ -1385,7 +1389,9 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
 
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/PeriodicBoundaryCondition">
         <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/InputParameter"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Periodic boundary conditions (PBCs) are input parameters that define the directions in which the simulation cell is replicated to approximate an infinite system.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Periodic Boundary Condition</rdfs:label>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PBC</skos:altLabel>
     </owl:Class>
     
 
@@ -1447,11 +1453,12 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
     
 
 
-    <!-- http://purls.helmholtz-metadaten.de/asmo/QuasiharmonicModel -->
+    <!-- http://purls.helmholtz-metadaten.de/asmo/QuasiHarmonicApproximation -->
 
-    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/QuasiharmonicModel">
+    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/QuasiHarmonicApproximation">
         <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/SimulationAlgorithm"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Quasi-harmonic Model</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Quasi-Harmonic Approximation (QHA) is a phonon-based model that extends the harmonic approximation by treating vibrational frequencies as volume-dependent, thereby accounting for thermal effects such as thermal expansion.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Quasi-Harmonic Approximation</rdfs:label>
     </owl:Class>
     
 
@@ -1481,6 +1488,7 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
 
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/Shear">
         <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/SpatialTransformation"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shear is a type of spatial transformation in which an object is distorted such that its shape changes while parallel lines remain parallel, but angles between them may change. This transformation shifts parts of the object in a specific direction, typically along one axis, while keeping the opposite axis fixed.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shear</rdfs:label>
     </owl:Class>
     
@@ -1658,6 +1666,7 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
 
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/TimeStep">
         <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/InputParameter"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Time step is an input parameter that indicates a discrete interval of simulated time used to update system state in molecular dynamics or other time-dependent simulations</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Time Step</rdfs:label>
     </owl:Class>
     
@@ -1710,6 +1719,7 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
 
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/VolumeRange">
         <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/InputParameter"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Volume range is an input parameter that indicates the predefined limits for the system&apos;s volume variation in a simulation.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Volume Range</rdfs:label>
     </owl:Class>
     
