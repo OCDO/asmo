@@ -424,6 +424,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
         <rdfs:subPropertyOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/hasSimulationParameter"/>
         <rdfs:domain rdf:resource="http://purls.helmholtz-metadaten.de/asmo/Simulation"/>
         <rdfs:range rdf:resource="http://purls.helmholtz-metadaten.de/asmo/OutputParameter"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The relation between a Simulation activity and the output parameters used.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has output parameter</rdfs:label>
     </owl:ObjectProperty>
     
@@ -462,6 +463,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The relation between a Simulation activity and the simulation parameters used (or physical quantities used as simulation parameters).</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has simulation parameter</rdfs:label>
     </owl:ObjectProperty>
     
@@ -484,9 +486,9 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purls.helmholtz-metadaten.de/asmo/CalculatedProperty"/>
                     <rdf:Description rdf:about="http://purls.helmholtz-metadaten.de/asmo/PhysicalQuantity"/>
                     <rdf:Description rdf:about="http://purls.helmholtz-metadaten.de/asmo/SimulationParameter"/>
-                    <rdf:Description rdf:about="http://purls.helmholtz-metadaten.de/cmso/CalculatedProperty"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
@@ -497,10 +499,21 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
     
 
 
+    <!-- http://purls.helmholtz-metadaten.de/asmo/usesSimulationAlgortihm -->
+
+    <owl:ObjectProperty rdf:about="http://purls.helmholtz-metadaten.de/asmo/usesSimulationAlgortihm">
+        <rdfs:domain rdf:resource="http://purls.helmholtz-metadaten.de/asmo/Simulation"/>
+        <rdfs:range rdf:resource="http://purls.helmholtz-metadaten.de/asmo/SimulationAlgorithm"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The relation between a Simulation activity and a simulation algorithm used or implemented as part of the simulation or calculation.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uses simulation algortihm</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purls.helmholtz-metadaten.de/asmo/wasCalculatedBy -->
 
     <owl:ObjectProperty rdf:about="http://purls.helmholtz-metadaten.de/asmo/wasCalculatedBy">
-        <rdfs:domain rdf:resource="http://purls.helmholtz-metadaten.de/cmso/CalculatedProperty"/>
+        <rdfs:domain rdf:resource="http://purls.helmholtz-metadaten.de/asmo/CalculatedProperty"/>
         <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Activity"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The relation between a calculated property and the activity through which it was obtained.</obo:IAO_0000115>
         <rdfs:label>was calculated by</rdfs:label>
@@ -802,6 +815,17 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
     
 
 
+    <!-- http://purls.helmholtz-metadaten.de/asmo/hasBase -->
+
+    <owl:DatatypeProperty rdf:about="http://purls.helmholtz-metadaten.de/asmo/hasBase">
+        <rdfs:domain rdf:resource="http://purls.helmholtz-metadaten.de/asmo/Exponentiation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A data property linking an exponentiation operation with the base value.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has base</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://purls.helmholtz-metadaten.de/asmo/hasDifference -->
 
     <owl:DatatypeProperty rdf:about="http://purls.helmholtz-metadaten.de/asmo/hasDifference">
@@ -831,6 +855,17 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A data property linking a division with the divisor value.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has divisor</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purls.helmholtz-metadaten.de/asmo/hasExponent -->
+
+    <owl:DatatypeProperty rdf:about="http://purls.helmholtz-metadaten.de/asmo/hasExponent">
+        <rdfs:domain rdf:resource="http://purls.helmholtz-metadaten.de/asmo/Exponentiation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A data property linking an exponentiation operation with the exponent value.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has exponent</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -918,9 +953,9 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purls.helmholtz-metadaten.de/asmo/CalculatedProperty"/>
                     <rdf:Description rdf:about="http://purls.helmholtz-metadaten.de/asmo/PhysicalQuantity"/>
                     <rdf:Description rdf:about="http://purls.helmholtz-metadaten.de/asmo/SimulationParameter"/>
-                    <rdf:Description rdf:about="http://purls.helmholtz-metadaten.de/cmso/CalculatedProperty"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
@@ -976,6 +1011,19 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
     
 
 
+    <!-- http://purls.helmholtz-metadaten.de/asmo/ANNNImodel -->
+
+    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/ANNNImodel">
+        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/SimulationAlgorithm"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The axial next-nearest neighbor Ising (ANNNI) model is a variant of the Ising model used to describe the behavior of magnetic materials. The ANNNI model includes interactions between next-nearest neighbors along one of the crystallographic axes of the lattice, in addition to the nearest-neighbor interactions considered in the standard Ising model.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://doi.org/10.1098/rspa.2020.0319</obo:IAO_0000119>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In the simplest case of the comparison in stability of fcc versus hcp lattices, fcc corresponds to the ‘ferromagnetic’ arrangement of spins and is stable in the Ising model for J &gt; 0; and hcp is represented by ‘antiferromagnetic’ spin arrangement and is stable if J &lt; 0.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ANNNI Model</rdfs:label>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Axial Next-Nearest-Neighbour Ising Model</skos:altLabel>
+    </owl:Class>
+    
+
+
     <!-- http://purls.helmholtz-metadaten.de/asmo/AbInitioMolecularDynamics -->
 
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/AbInitioMolecularDynamics">
@@ -1011,11 +1059,20 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
     <!-- http://purls.helmholtz-metadaten.de/asmo/BulkModulus -->
 
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/BulkModulus">
-        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/cmso/CalculatedProperty"/>
+        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/CalculatedProperty"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bulk modulus is a property that quantifies a material&apos;s resistance to uniform compression.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bulk Modulus</rdfs:label>
         <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">B</skos:altLabel>
         <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purls.helmholtz-metadaten.de/asmo/CalculatedProperty -->
+
+    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/CalculatedProperty">
+        <rdfs:label>Calculated Property</rdfs:label>
+        <skos:definition>A calculated property is a property of a material resulting from a calculation or simulation.</skos:definition>
     </owl:Class>
     
 
@@ -1110,6 +1167,16 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
     
 
 
+    <!-- http://purls.helmholtz-metadaten.de/asmo/Exponentiation -->
+
+    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/Exponentiation">
+        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/MathematicalOperation"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An arithmetic operation by which a number (the base) is raised to the power of another number (the exponent), symbolized by ** or ^. It represents repeated multiplication of the base by itself.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Exponentiation</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purls.helmholtz-metadaten.de/asmo/Force -->
 
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/Force">
@@ -1129,8 +1196,8 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
     <!-- http://purls.helmholtz-metadaten.de/asmo/FormationEnergy -->
 
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/FormationEnergy">
+        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/CalculatedProperty"/>
         <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/Energy"/>
-        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/cmso/CalculatedProperty"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Formation energy is a property that quantifies the energy required to create a defect, molecule, or material from its constituent atoms or molecules in their standard states.</obo:IAO_0000115>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">It is typically calculated as the difference between the total energy of the system containing the defect or structure and the total energy of the isolated constituent atoms or molecules.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Formation Energy</rdfs:label>
@@ -1143,6 +1210,16 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/FreeEnergy">
         <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/Energy"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Free Energy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purls.helmholtz-metadaten.de/asmo/FreeEnergyCalculation -->
+
+    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/FreeEnergyCalculation">
+        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/Simulation"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Free energy calculation is an activity where the thermodynamic free energy of a system is computed, often under specific conditions such as constant temperature and pressure, to determine system stability or phase transitions.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Free Energy Calculation</rdfs:label>
     </owl:Class>
     
 
@@ -1419,7 +1496,7 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
     <!-- http://purls.helmholtz-metadaten.de/asmo/PoissonsRatio -->
 
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/PoissonsRatio">
-        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/cmso/CalculatedProperty"/>
+        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/CalculatedProperty"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Poisson&apos;s ratio is a dimensionless property that quantifies the Poisson effect, which describes the deformation (expansion or contraction) of a material in the direction perpendicular to the applied load. It is the ratio of the transverse strain to the axial strain in a material subjected to uniaxial stress.</obo:IAO_0000115>
         <obo:OBCS_0000221 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ν = - transverse_strain / axial_strain</obo:OBCS_0000221>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Poisson&apos;s Ratio</rdfs:label>
@@ -1497,7 +1574,7 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
     <!-- http://purls.helmholtz-metadaten.de/asmo/ShearModulus -->
 
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/ShearModulus">
-        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/cmso/CalculatedProperty"/>
+        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/CalculatedProperty"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shear modulus, also known as the modulus of rigidity, is a measure of a material&apos;s resistance to shear deformation. It is defined as the ratio of shear stress (force per unit area applied parallel to the surface) to shear strain in the linear elastic region of the material.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shear Modulus</rdfs:label>
         <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G</skos:altLabel>
@@ -1633,6 +1710,8 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
 
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/ThermodynamicIntegration">
         <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/SimulationAlgorithm"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thermodynamic integration is a numerical method used to compute free energy differences between two states by integrating the average derivative of the system&apos;s energy with respect to a coupling parameter along a reversible path connecting the states.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">It is commonly used in molecular simulations to calculate free energies of solvation, binding, or phase transitions.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thermodynamic Integration</rdfs:label>
     </owl:Class>
     
@@ -1685,7 +1764,7 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
     <!-- http://purls.helmholtz-metadaten.de/asmo/TotalMagneticMoment -->
 
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/TotalMagneticMoment">
-        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/cmso/CalculatedProperty"/>
+        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/CalculatedProperty"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Total magnetic moment is a property that quantifies the overall strength and direction of the magnetic field produced by a system, calculated as the vector sum of all individual magnetic moments contributed by its atoms, ions, or molecules.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Total Magnetic Moment</rdfs:label>
     </owl:Class>
@@ -1728,19 +1807,10 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
     <!-- http://purls.helmholtz-metadaten.de/asmo/YoungsModulus -->
 
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/YoungsModulus">
-        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/cmso/CalculatedProperty"/>
+        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/CalculatedProperty"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Young&apos;s modulus is a property that quantifies the stiffness of a material, defined as the ratio of tensile stress (force per unit area) to tensile strain (proportional deformation in length) in the linear elastic region of a material&apos;s stress-strain curve.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Young’s Modulus</rdfs:label>
         <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E</skos:altLabel>
-    </owl:Class>
-    
-
-
-    <!-- http://purls.helmholtz-metadaten.de/cmso/CalculatedProperty -->
-
-    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/cmso/CalculatedProperty">
-        <rdfs:label>Calculated Property</rdfs:label>
-        <skos:definition>A calculated property is a property of a material resulting from a calculation or simulation.</skos:definition>
     </owl:Class>
     
 
