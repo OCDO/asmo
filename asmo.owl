@@ -1369,7 +1369,7 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/NumberOfIonicSteps">
         <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/InputParameter"/>
         <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/OutputParameter"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Number of ionic steps is a simulation parameter refers to the total iterations performed in a simulation to update atomic positions based on forces until convergence is reached.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Number of ionic steps is a simulation parameter that refers to the total iterations performed in a simulation to update atomic positions based on forces until convergence is reached.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Number Of Ionic Steps</rdfs:label>
     </owl:Class>
     
@@ -1558,7 +1558,7 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
 
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/SpatialTransformation">
         <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/StructureManipulation"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spatial transformation is a type of structure manipulation to convert the coordinates of  an image to the coordinates of a reference image.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spatial transformation is a type of structure manipulation to convert the coordinates of an image to the coordinates of a reference image.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://doi.org/10.1561/0600000009</obo:IAO_0000119>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The spatial transformations that involve translation or rotation are generally considered rigid body or Euclidean transformations, since the Euclidean distances within images are preserved. In contrast, the other ones are classified as non-rigid or elastic.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spatial Transformation</rdfs:label>
@@ -1966,12 +1966,23 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
     
 
 
-    <!-- http://purls.helmholtz-metadaten.de/asmo/Andersen -->
+    <!-- http://purls.helmholtz-metadaten.de/asmo/AndersenBarostat -->
 
-    <owl:NamedIndividual rdf:about="http://purls.helmholtz-metadaten.de/asmo/Andersen">
+    <owl:NamedIndividual rdf:about="http://purls.helmholtz-metadaten.de/asmo/AndersenBarostat">
         <rdf:type rdf:resource="http://purls.helmholtz-metadaten.de/asmo/Barostat"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Andersen barostat is a barostat method that couples the system to a pressure bath by introducing an extra degree of freedom (a &quot;piston&quot;) to adjust the simulation box volume isotropically.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Andersen Barostat</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purls.helmholtz-metadaten.de/asmo/AndersenThermostat -->
+
+    <owl:NamedIndividual rdf:about="http://purls.helmholtz-metadaten.de/asmo/AndersenThermostat">
         <rdf:type rdf:resource="http://purls.helmholtz-metadaten.de/asmo/Thermostat"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Andersen</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Andersen thermostat is a stochastic thermostat method that maintains the system&apos;s temperature by simulating random collisions with a fictitious heat bath. During these collisions, the momentum of randomly selected particles is instantaneously reassigned according to the Boltzmann distribution at the target temperature, controlled by a collision frequency parameter. This approach introduces temperature fluctuations while ensuring thermal equilibrium with the desired temperature.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://doi.org/10.1063/1.439486</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Andersen Thermostat</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1986,11 +1997,23 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
     
 
 
-    <!-- http://purls.helmholtz-metadaten.de/asmo/Berendsen -->
+    <!-- http://purls.helmholtz-metadaten.de/asmo/BerendsenBarostat -->
 
-    <owl:NamedIndividual rdf:about="http://purls.helmholtz-metadaten.de/asmo/Berendsen">
+    <owl:NamedIndividual rdf:about="http://purls.helmholtz-metadaten.de/asmo/BerendsenBarostat">
         <rdf:type rdf:resource="http://purls.helmholtz-metadaten.de/asmo/Barostat"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Berendsen</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Berendsen barostat is a barostat method that controls system pressure by scaling the simulation box volume (and thus atomic coordinates) based on the difference between current and target pressures. It weakly couples the system to an external pressure bath for smooth equilibration.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Berendsen Barostat</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purls.helmholtz-metadaten.de/asmo/BerendsenThermostat -->
+
+    <owl:NamedIndividual rdf:about="http://purls.helmholtz-metadaten.de/asmo/BerendsenThermostat">
+        <rdf:type rdf:resource="http://purls.helmholtz-metadaten.de/asmo/Thermostat"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Berendsen thermostat is a thermostat algorithm that adjusts the velocities of particles to control the system&apos;s temperature by rescaling them at each time step. It uses a damping parameter to determine how quickly the temperature approaches a desired value, allowing for a smooth temperature transition.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://doi.org/10.1007/978-94-009-6463-1_16</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Berendsen Thermostat</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2011,6 +2034,8 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
 
     <owl:NamedIndividual rdf:about="http://purls.helmholtz-metadaten.de/asmo/BussiDonadioParrinello">
         <rdf:type rdf:resource="http://purls.helmholtz-metadaten.de/asmo/Thermostat"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Bussi-Donadio-Parrinello (BDP) thermostat, also known as canonical sampling through velocity rescaling (CSVR), is a thermostat algorithm designed to maintain a constant temperature while ensuring proper sampling of the canonical ensemble. This method extends the Berendsen thermostat by stochastically rescaling the velocities of particles, allowing the kinetic energy to fluctuate around a target value derived from the canonical equilibrium distribution.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://doi.org/10.1063/1.2408420</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bussi-Donadio-Parrinello</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2062,6 +2087,7 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
 
     <owl:NamedIndividual rdf:about="http://purls.helmholtz-metadaten.de/asmo/ExplicitKPointMesh">
         <rdf:type rdf:resource="http://purls.helmholtz-metadaten.de/asmo/KPointMesh"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An explicit k-point mesh refers to an input where the software will use exactly the points provided.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Explicit KPoint Mesh</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2071,6 +2097,7 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
 
     <owl:NamedIndividual rdf:about="http://purls.helmholtz-metadaten.de/asmo/GammaCenteredKPointMesh">
         <rdf:type rdf:resource="http://purls.helmholtz-metadaten.de/asmo/KPointMesh"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A gamma-centered k-point mesh refers to a grid where the k-points are arranged symmetrically around the Gamma point (k = 0).</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gamma-Centered KPoint Mesh</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2116,6 +2143,8 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
 
     <owl:NamedIndividual rdf:about="http://purls.helmholtz-metadaten.de/asmo/Langevin">
         <rdf:type rdf:resource="http://purls.helmholtz-metadaten.de/asmo/Thermostat"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Langevin thermostat is a thermostat, which mimics the coupling of the system of interest to a thermal bath by modifying Newton&apos;s equations of motion in two ways: first, a ‘random force’ term is introduced: this is the stochastic element of the algorithm. Second, a deterministic ‘frictional force’ is added, proportional to particle velocities. The strength of these terms, and the prescribed temperature, are connected by the fluctuation–dissipation theorem.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&quot;Computer Simulation of Liquids&quot;, ISBN-13 : ‎978-0198556459</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Langevin</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2137,6 +2166,7 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
 
     <owl:NamedIndividual rdf:about="http://purls.helmholtz-metadaten.de/asmo/MonkhorstPackKPointMesh">
         <rdf:type rdf:resource="http://purls.helmholtz-metadaten.de/asmo/KPointMesh"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Monkhorst-Pack k-point mesh refers to a regular grid of k-points for sampling the Brillouin zone.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Monkhorst Pack KPoint Mesh</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2158,6 +2188,9 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
 
     <owl:NamedIndividual rdf:about="http://purls.helmholtz-metadaten.de/asmo/NoseHoover">
         <rdf:type rdf:resource="http://purls.helmholtz-metadaten.de/asmo/Thermostat"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Nosé–Hoover thermostat is a deterministic algorithm for constant-temperature molecular dynamics simulations. Nosé–Hoover thermostat maintains constant-temperature condition (canonical ensemble) by connecting the system to a heat bath through an additional degree of freedom.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://doi.org/10.1063%2F1.447334</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://doi.org/10.1103%2FPhysRevA.31.1695</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nose-Hoover</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2167,6 +2200,7 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
 
     <owl:NamedIndividual rdf:about="http://purls.helmholtz-metadaten.de/asmo/ParrinelloRahman">
         <rdf:type rdf:resource="http://purls.helmholtz-metadaten.de/asmo/Barostat"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Parrinello-Rahman barostat is a barostat method that controls system pressure by allowing both the volume and shape of the simulation box to fluctuate.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Parrinello-Rahman</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2176,6 +2210,8 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
 
     <owl:NamedIndividual rdf:about="http://purls.helmholtz-metadaten.de/asmo/PeriodicityInXdirection">
         <rdf:type rdf:resource="http://purls.helmholtz-metadaten.de/asmo/PeriodicBoundaryCondition"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input parameter defining whether periodicity in the X-axis of the simulation cell is enabled.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In most cases, it refers to the use of periodic boundary conditions in molecular dynamics.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Periodicity in X-direction</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2185,6 +2221,8 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
 
     <owl:NamedIndividual rdf:about="http://purls.helmholtz-metadaten.de/asmo/PeriodicityInYdirection">
         <rdf:type rdf:resource="http://purls.helmholtz-metadaten.de/asmo/PeriodicBoundaryCondition"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input parameter defining whether periodicity in the Y-axis of the simulation cell is enabled.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In most cases, it refers to the use of periodic boundary conditions in molecular dynamics.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Periodicity in Y-direction</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2194,6 +2232,8 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
 
     <owl:NamedIndividual rdf:about="http://purls.helmholtz-metadaten.de/asmo/PeriodicityInZdirection">
         <rdf:type rdf:resource="http://purls.helmholtz-metadaten.de/asmo/PeriodicBoundaryCondition"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Input parameter defining whether periodicity in the Z-axis of the simulation cell is enabled.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In most cases, it refers to the use of periodic boundary conditions in molecular dynamics.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Periodicity in Z-direction</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2223,6 +2263,7 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
 
     <owl:NamedIndividual rdf:about="http://purls.helmholtz-metadaten.de/asmo/VelocityRescaling">
         <rdf:type rdf:resource="http://purls.helmholtz-metadaten.de/asmo/Thermostat"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Velocity rescaling is a simple thermostat method used in molecular dynamics simulations to maintain a constant temperature by adjusting particle velocities at each time step. It resets the temperature of a group of atoms by explicitly rescaling their velocities.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Velocity Rescaling</rdfs:label>
     </owl:NamedIndividual>
     
