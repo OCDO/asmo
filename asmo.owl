@@ -914,6 +914,17 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
     
 
 
+    <!-- http://purls.helmholtz-metadaten.de/asmo/hasReference -->
+
+    <owl:DatatypeProperty rdf:about="http://purls.helmholtz-metadaten.de/asmo/hasReference">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A data property linking an entity with a reference (e.g. bibliographic) to another resource.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has reference</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://purls.helmholtz-metadaten.de/asmo/hasSubtrahend -->
 
     <owl:DatatypeProperty rdf:about="http://purls.helmholtz-metadaten.de/asmo/hasSubtrahend">
@@ -936,32 +947,13 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
     
 
 
-    <!-- http://purls.helmholtz-metadaten.de/cmso/hasReference -->
+    <!-- http://purls.helmholtz-metadaten.de/asmo/hasValue -->
 
-    <owl:DatatypeProperty rdf:about="http://purls.helmholtz-metadaten.de/cmso/hasReference">
+    <owl:DatatypeProperty rdf:about="http://purls.helmholtz-metadaten.de/asmo/hasValue">
         <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <obo:IAO_0000115>A data property linking an entity with a reference (e.g. bibliographic) to another resource.</obo:IAO_0000115>
-        <rdfs:label>has reference</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purls.helmholtz-metadaten.de/cmso/hasValue -->
-
-    <owl:DatatypeProperty rdf:about="http://purls.helmholtz-metadaten.de/cmso/hasValue">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purls.helmholtz-metadaten.de/asmo/CalculatedProperty"/>
-                    <rdf:Description rdf:about="http://purls.helmholtz-metadaten.de/asmo/PhysicalQuantity"/>
-                    <rdf:Description rdf:about="http://purls.helmholtz-metadaten.de/asmo/SimulationParameter"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A data property linking an entity to its value.</obo:IAO_0000115>
-        <rdfs:label>has value</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has value</rdfs:label>
     </owl:DatatypeProperty>
     
 
