@@ -2,8 +2,7 @@
 
 ASMO is an ontology that aims to define the concepts needed to describe commonly used atomic scale simulation methods, i.e. density functional theory, molecular dynamics, Monte Carlo methods, etc. ASMO uses the Provenance Ontology (PROV-O) to describe the simulation process.
 
-### Documentation
-[https://ocdo.github.io/asmo/](https://ocdo.github.io/asmo/)
+* **Documentation**: [https://ocdo.github.io/asmo/](https://ocdo.github.io/asmo/)
 
 ![Schematic representation of ASMO](images/ASMO.jpg)
 
