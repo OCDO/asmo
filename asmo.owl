@@ -500,13 +500,13 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
     
 
 
-    <!-- http://purls.helmholtz-metadaten.de/asmo/usesSimulationAlgortihm -->
+    <!-- http://purls.helmholtz-metadaten.de/asmo/usesSimulationAlgorithm -->
 
-    <owl:ObjectProperty rdf:about="http://purls.helmholtz-metadaten.de/asmo/usesSimulationAlgortihm">
+    <owl:ObjectProperty rdf:about="http://purls.helmholtz-metadaten.de/asmo/usesSimulationAlgorithm">
         <rdfs:domain rdf:resource="http://purls.helmholtz-metadaten.de/asmo/Simulation"/>
         <rdfs:range rdf:resource="http://purls.helmholtz-metadaten.de/asmo/SimulationAlgorithm"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The relation between a Simulation activity and a simulation algorithm used or implemented as part of the simulation or calculation.</obo:IAO_0000115>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uses simulation algortihm</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uses simulation algorithm</rdfs:label>
     </owl:ObjectProperty>
     
 
