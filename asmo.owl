@@ -385,6 +385,17 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
     
 
 
+    <!-- http://purls.helmholtz-metadaten.de/asmo/hasCalculatedProperty -->
+
+    <owl:ObjectProperty rdf:about="http://purls.helmholtz-metadaten.de/asmo/hasCalculatedProperty">
+        <rdfs:domain rdf:resource="http://purls.helmholtz-metadaten.de/cmso/ComputationalSample"/>
+        <rdfs:range rdf:resource="http://purls.helmholtz-metadaten.de/asmo/CalculatedProperty"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The relation between a computational sample and the calculated property.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has calculated property</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purls.helmholtz-metadaten.de/asmo/hasComputationalMethod -->
 
     <owl:ObjectProperty rdf:about="http://purls.helmholtz-metadaten.de/asmo/hasComputationalMethod">
@@ -1275,6 +1286,7 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
     <!-- http://purls.helmholtz-metadaten.de/asmo/KineticEnergy -->
 
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/KineticEnergy">
+        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/CalculatedProperty"/>
         <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/Energy"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kinetic energy is the energy due to motion.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://doi.org/10.1351/goldbook.K03402</obo:IAO_0000119>
@@ -1502,6 +1514,7 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
     <!-- http://purls.helmholtz-metadaten.de/asmo/PotentialEnergy -->
 
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/PotentialEnergy">
+        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/CalculatedProperty"/>
         <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/Energy"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Potential energy is the energy of position or orientation in a field of force.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://doi.org/10.1351/goldbook.P04778</obo:IAO_0000119>
@@ -1592,6 +1605,29 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/SimulationAlgorithm">
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A simulation algorithm is a computational method used to represent and approximate a system&apos;s behavior based on mathematical models and input parameters.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Simulation Algorithm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purls.helmholtz-metadaten.de/asmo/SimulationCellLength -->
+
+    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/SimulationCellLength">
+        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/CalculatedProperty"/>
+        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/Length"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The simulation cell length refers to the length (dimension) of the simulation cell or box.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Simulation Cell Length</rdfs:label>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Box Length</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purls.helmholtz-metadaten.de/asmo/SimulationCellVolume -->
+
+    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/SimulationCellVolume">
+        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/CalculatedProperty"/>
+        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/Volume"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The simulation cell volume refers to the volume of the simulation cell or box.</obo:IAO_0000115>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Simulation Cell Volume</rdfs:label>
     </owl:Class>
     
 
@@ -1693,6 +1729,7 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
     <!-- http://purls.helmholtz-metadaten.de/asmo/ThermodynamicFreeEnergy -->
 
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/ThermodynamicFreeEnergy">
+        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/CalculatedProperty"/>
         <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/Energy"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thermodynamic free energy is the energy in a physical system that can be converted to do work.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thermodynamic Free Energy</rdfs:label>
@@ -1748,6 +1785,7 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
     <!-- http://purls.helmholtz-metadaten.de/asmo/TotalEnergy -->
 
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/TotalEnergy">
+        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/CalculatedProperty"/>
         <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/Energy"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In mechanics, it is the sum of potential energy and kinetic energy.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Total Energy</rdfs:label>
@@ -1805,6 +1843,15 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Young&apos;s modulus is a property that quantifies the stiffness of a material, defined as the ratio of tensile stress (force per unit area) to tensile strain (proportional deformation in length) in the linear elastic region of a material&apos;s stress-strain curve.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Young’s Modulus</rdfs:label>
         <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://purls.helmholtz-metadaten.de/cmso/ComputationalSample -->
+
+    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/cmso/ComputationalSample">
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A computational sample is a representative system of a material for analysis through computational methods in the context of materials science.</obo:IAO_0000115>
+        <rdfs:label>Computational Sample</rdfs:label>
     </owl:Class>
     
 
