@@ -463,6 +463,17 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
     
 
 
+    <!-- http://purls.helmholtz-metadaten.de/asmo/hasShearPlane -->
+
+    <owl:ObjectProperty rdf:about="http://purls.helmholtz-metadaten.de/asmo/hasShearPlane">
+        <rdfs:domain rdf:resource="http://purls.helmholtz-metadaten.de/asmo/Shear"/>
+        <rdfs:range rdf:resource="http://purls.helmholtz-metadaten.de/cmso/Plane"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The relation between a Shear spatial transformation and a specific plane within a material where shear deformation is applied.</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has shear plane</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purls.helmholtz-metadaten.de/asmo/hasSimulationParameter -->
 
     <owl:ObjectProperty rdf:about="http://purls.helmholtz-metadaten.de/asmo/hasSimulationParameter">
