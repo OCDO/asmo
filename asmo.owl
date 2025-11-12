@@ -1220,9 +1220,9 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
     
 
 
-    <!-- http://purls.helmholtz-metadaten.de/asmo/Flow_Stress -->
+    <!-- http://purls.helmholtz-metadaten.de/asmo/FlowStress -->
 
-    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/Flow_Stress">
+    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/FlowStress">
         <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/CalculatedProperty"/>
         <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/Stress"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Flow Stress</rdfs:label>
