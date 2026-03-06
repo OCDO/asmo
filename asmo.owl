@@ -16,53 +16,14 @@
     <owl:Ontology rdf:about="http://purls.helmholtz-metadaten.de/asmo/">
         <owl:versionIRI rdf:resource="http://purls.helmholtz-metadaten.de/asmo/v1.0.1"/>
         <terms:abstract xml:lang="en">The Atomistic Simulation Methods Ontology (ASMO) provides a formal vocabulary for describing computational methods used in atomistic simulations of materials. It covers density functional theory (DFT), molecular dynamics (MD), Monte Carlo (MC) methods, and related simulation techniques, including interatomic potentials, simulation parameters, and calculated physical properties. ASMO leverages the W3C Provenance Ontology (PROV-O) to represent simulation workflows, enabling interoperability with workflow management systems and FAIR data practices in computational materials science. ASMO is part of the Open Computational Data Ontology (OCDO) ecosystem.</terms:abstract>
-        <terms:contributor>
-            <rdf:Description>
-                <schema:affiliation xml:lang="en">Forschungszentrum Jülich GmbH</schema:affiliation>
-                <schema:familyName xml:lang="en">Sandfeld</schema:familyName>
-                <schema:givenName xml:lang="en">Stefan</schema:givenName>
-                <schema:name xml:lang="en">Stefan Sandfeld</schema:name>
-                <schema:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0001-9560-4728</schema:url>
-            </rdf:Description>
-        </terms:contributor>
-        <terms:contributor>
-            <rdf:Description>
-                <schema:affiliation xml:lang="en">Forschungszentrum Jülich GmbH</schema:affiliation>
-                <schema:familyName xml:lang="en">Hofmann</schema:familyName>
-                <schema:givenName xml:lang="en">Volker</schema:givenName>
-                <schema:name xml:lang="en">Volker Hofmann</schema:name>
-                <schema:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-5149-603X</schema:url>
-            </rdf:Description>
-        </terms:contributor>
-        <terms:contributor>
-            <rdf:Description>
-                <schema:affiliation xml:lang="en">Ruhr-Universität Bochum</schema:affiliation>
-                <schema:familyName xml:lang="en">Menon</schema:familyName>
-                <schema:givenName xml:lang="en">Sarath</schema:givenName>
-                <schema:name xml:lang="en">Sarath Menon</schema:name>
-                <schema:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-6776-1213</schema:url>
-            </rdf:Description>
-        </terms:contributor>
-        <terms:contributor>
-            <rdf:Description>
-                <schema:affiliation xml:lang="en">Bundesanstalt für Materialforschung und -prüfung</schema:affiliation>
-                <schema:familyName xml:lang="en">Hickel</schema:familyName>
-                <schema:givenName xml:lang="en">Tilmann</schema:givenName>
-                <schema:name xml:lang="en">Tilmann Hickel</schema:name>
-                <schema:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0003-0698-4891</schema:url>
-            </rdf:Description>
-        </terms:contributor>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-5149-603X"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-6776-1213"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-8933-0238"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0003-0698-4891"/>
+        <terms:contributor rdf:resource="https://orcid.org/0009-0002-1604-5812"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-11</terms:created>
-        <terms:creator>
-            <rdf:Description>
-                <schema:affiliation xml:lang="en">Forschungszentrum Jülich GmbH</schema:affiliation>
-                <schema:email>a.azocar.guzman@fz-juelich.de</schema:email>
-                <schema:familyName xml:lang="en">Azocar Guzman</schema:familyName>
-                <schema:givenName xml:lang="en">Abril</schema:givenName>
-                <schema:name xml:lang="en">Abril Azocar Guzman</schema:name>
-                <schema:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0001-7564-7990</schema:url>
-            </rdf:Description>
-        </terms:creator>
+        <terms:creator rdf:resource="https://orcid.org/0000-0001-7564-7990"/>
+        <terms:creator rdf:resource="https://orcid.org/0000-0001-9560-4728"/>
         <terms:description>ASMO is an ontology that aims to define the concepts needed to describe commonly used atomic scale simulation methods, i.e. density functional theory, molecular dynamics, Monte Carlo methods, etc. ASMO uses the Provenance Ontology (PROV-O) to describe the simulation process.</terms:description>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-11</terms:issued>
         <terms:license rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://creativecommons.org/licenses/by/4.0/</terms:license>
@@ -2581,11 +2542,12 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
         <schema:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-5149-603X</schema:url>
     </rdf:Description>
     <rdf:Description>
-        <schema:affiliation xml:lang="en">Ruhr-Universität Bochum</schema:affiliation>
-        <schema:familyName xml:lang="en">Menon</schema:familyName>
-        <schema:givenName xml:lang="en">Sarath</schema:givenName>
-        <schema:name xml:lang="en">Sarath Menon</schema:name>
-        <schema:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-6776-1213</schema:url>
+        <schema:affiliation xml:lang="en">Forschungszentrum Jülich GmbH</schema:affiliation>
+        <schema:email>a.azocar.guzman@fz-juelich.de</schema:email>
+        <schema:familyName xml:lang="en">Azocar Guzman</schema:familyName>
+        <schema:givenName xml:lang="en">Abril</schema:givenName>
+        <schema:name xml:lang="en">Abril Azocar Guzman</schema:name>
+        <schema:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0001-7564-7990</schema:url>
     </rdf:Description>
     <rdf:Description>
         <schema:affiliation xml:lang="en">Bundesanstalt für Materialforschung und -prüfung</schema:affiliation>
@@ -2595,12 +2557,37 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
         <schema:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0003-0698-4891</schema:url>
     </rdf:Description>
     <rdf:Description>
+        <schema:affiliation xml:lang="en">Bundesanstalt für Materialforschung und -prüfung</schema:affiliation>
+        <schema:familyName xml:lang="en">Hickel</schema:familyName>
+        <schema:givenName xml:lang="en">Tilmann</schema:givenName>
+        <schema:name xml:lang="en">Tilmann Hickel</schema:name>
+        <schema:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0003-0698-4891</schema:url>
+    </rdf:Description>
+    <rdf:Description>
+        <schema:affiliation xml:lang="en">Ruhr-Universität Bochum</schema:affiliation>
+        <schema:familyName xml:lang="en">Menon</schema:familyName>
+        <schema:givenName xml:lang="en">Sarath</schema:givenName>
+        <schema:name xml:lang="en">Sarath Menon</schema:name>
+        <schema:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-6776-1213</schema:url>
+    </rdf:Description>
+    <rdf:Description>
         <schema:affiliation xml:lang="en">Forschungszentrum Jülich GmbH</schema:affiliation>
         <schema:email>a.azocar.guzman@fz-juelich.de</schema:email>
         <schema:familyName xml:lang="en">Azocar Guzman</schema:familyName>
         <schema:givenName xml:lang="en">Abril</schema:givenName>
         <schema:name xml:lang="en">Abril Azocar Guzman</schema:name>
         <schema:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0001-7564-7990</schema:url>
+    </rdf:Description>
+    <rdf:Description>
+        <schema:name xml:lang="en">Nationale Forschungsdateninfrastruktur</schema:name>
+        <schema:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://ror.org/05qj6w324</schema:url>
+    </rdf:Description>
+    <rdf:Description>
+        <schema:affiliation xml:lang="en">Ruhr-Universität Bochum</schema:affiliation>
+        <schema:familyName xml:lang="en">Menon</schema:familyName>
+        <schema:givenName xml:lang="en">Sarath</schema:givenName>
+        <schema:name xml:lang="en">Sarath Menon</schema:name>
+        <schema:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-6776-1213</schema:url>
     </rdf:Description>
     <rdf:Description>
         <schema:affiliation xml:lang="en">Forschungszentrum Jülich GmbH</schema:affiliation>
@@ -2610,37 +2597,15 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
         <schema:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-5149-603X</schema:url>
     </rdf:Description>
     <rdf:Description>
-        <schema:name xml:lang="en">Nationale Forschungsdateninfrastruktur</schema:name>
-        <schema:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://ror.org/05qj6w324</schema:url>
-    </rdf:Description>
-    <rdf:Description>
-        <schema:affiliation xml:lang="en">Forschungszentrum Jülich GmbH</schema:affiliation>
-        <schema:email>a.azocar.guzman@fz-juelich.de</schema:email>
-        <schema:familyName xml:lang="en">Azocar Guzman</schema:familyName>
-        <schema:givenName xml:lang="en">Abril</schema:givenName>
-        <schema:name xml:lang="en">Abril Azocar Guzman</schema:name>
-        <schema:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0001-7564-7990</schema:url>
-    </rdf:Description>
-    <rdf:Description>
-        <schema:affiliation xml:lang="en">Ruhr-Universität Bochum</schema:affiliation>
-        <schema:familyName xml:lang="en">Menon</schema:familyName>
-        <schema:givenName xml:lang="en">Sarath</schema:givenName>
-        <schema:name xml:lang="en">Sarath Menon</schema:name>
-        <schema:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-6776-1213</schema:url>
-    </rdf:Description>
-    <rdf:Description>
-        <schema:affiliation xml:lang="en">Bundesanstalt für Materialforschung und -prüfung</schema:affiliation>
-        <schema:familyName xml:lang="en">Hickel</schema:familyName>
-        <schema:givenName xml:lang="en">Tilmann</schema:givenName>
-        <schema:name xml:lang="en">Tilmann Hickel</schema:name>
-        <schema:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0003-0698-4891</schema:url>
-    </rdf:Description>
-    <rdf:Description>
         <schema:affiliation xml:lang="en">Forschungszentrum Jülich GmbH</schema:affiliation>
         <schema:familyName xml:lang="en">Sandfeld</schema:familyName>
         <schema:givenName xml:lang="en">Stefan</schema:givenName>
         <schema:name xml:lang="en">Stefan Sandfeld</schema:name>
         <schema:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0001-9560-4728</schema:url>
+    </rdf:Description>
+    <rdf:Description>
+        <schema:name xml:lang="en">Nationale Forschungsdateninfrastruktur</schema:name>
+        <schema:url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://ror.org/05qj6w324</schema:url>
     </rdf:Description>
 </rdf:RDF>
 
