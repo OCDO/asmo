@@ -18,9 +18,7 @@
         <terms:abstract xml:lang="en">The Atomistic Simulation Methods Ontology (ASMO) provides a formal vocabulary for describing computational methods used in atomistic simulations of materials. It covers density functional theory (DFT), molecular dynamics (MD), Monte Carlo (MC) methods, and related simulation techniques, including interatomic potentials, simulation parameters, and calculated physical properties. ASMO leverages the W3C Provenance Ontology (PROV-O) to represent simulation workflows, enabling interoperability with workflow management systems and FAIR data practices in computational materials science. ASMO is part of the Open Computational Data Ontology (OCDO) ecosystem.</terms:abstract>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-5149-603X"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-6776-1213"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0002-8933-0238"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-0698-4891"/>
-        <terms:contributor rdf:resource="https://orcid.org/0009-0002-1604-5812"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-11</terms:created>
         <terms:creator rdf:resource="https://orcid.org/0000-0001-7564-7990"/>
         <terms:creator rdf:resource="https://orcid.org/0000-0001-9560-4728"/>
