@@ -29,7 +29,7 @@
         <terms:title>Atomistic Simulation Methods Ontology (ASMO)</terms:title>
         <bibo:doi rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10.5281/zenodo.10805591</bibo:doi>
         <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/OCDO/asmo</rdfs:seeAlso>
-        <owl:priorVersion rdf:resource="http://purls.helmholtz-metadaten.de/asmo/v1.0.0"/>
+        <owl:priorVersion rdf:resource="http://purls.helmholtz-metadaten.de/asmo/v0.0.1"/>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.0.2</owl:versionInfo>
         <schema:citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Abril Azocar Guzman. (2024). Atomistic Simulation Methods Ontology. Zenodo. https://doi.org/10.5281/zenodo.10805591</schema:citation>
         <schema:codeRepository rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/OCDO/asmo</schema:codeRepository>
