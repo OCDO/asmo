@@ -1077,7 +1077,16 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+    <!-- http://purls.helmholtz-metadaten.de/asmo/ANNNImodel -->
+
+    <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/ANNNImodel">
+        <rdfs:subClassOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/SimulationAlgorithm"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The axial next-nearest neighbor Ising (ANNNI) model is a variant of the Ising model used to describe the behavior of magnetic materials. The ANNNI model includes interactions between next-nearest neighbors along one of the crystallographic axes of the lattice, in addition to the nearest-neighbor interactions considered in the standard Ising model.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://doi.org/10.1098/rspa.2020.0319</obo:IAO_0000119>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In the simplest case of the comparison in stability of fcc versus hcp lattices, fcc corresponds to the ‘ferromagnetic’ arrangement of spins and is stable in the Ising model for J &gt; 0; and hcp is represented by ‘antiferromagnetic’ spin arrangement and is stable if J &lt; 0.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ANNNI Model</rdfs:label>
+        <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Axial Next-Nearest-Neighbour Ising Model</skos:altLabel>
+    </owl:Class>
 
 
     <!-- http://purls.helmholtz-metadaten.de/asmo/AbInitioMolecularDynamics -->
