@@ -18,9 +18,9 @@
         <terms:abstract xml:lang="en">The Atomistic Simulation Methods Ontology (ASMO) provides a formal vocabulary for describing computational methods used in atomistic simulations of materials. It covers density functional theory (DFT), molecular dynamics (MD), Monte Carlo (MC) methods, and related simulation techniques, including interatomic potentials, simulation parameters, and calculated physical properties. ASMO leverages the W3C Provenance Ontology (PROV-O) to represent simulation workflows, enabling interoperability with workflow management systems and FAIR data practices in computational materials science. ASMO is part of the Open Computational Data Ontology (OCDO) ecosystem.</terms:abstract>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-5149-603X"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0002-6776-1213"/>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-8933-0238"/>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-0698-4891"/>
         <terms:contributor rdf:resource="https://orcid.org/0009-0002-1604-5812"/>
-        <terms:contributor rdf:resource="https://orcid.org/0000-0002-8933-0238"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-11</terms:created>
         <terms:creator rdf:resource="https://orcid.org/0000-0001-7564-7990"/>
         <terms:creator rdf:resource="https://orcid.org/0000-0001-9560-4728"/>
@@ -522,13 +522,16 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has output parameter</rdfs:label>
     </owl:ObjectProperty>
     
+
+
     <!-- http://purls.helmholtz-metadaten.de/asmo/hasPlane -->
 
     <owl:ObjectProperty rdf:about="http://purls.helmholtz-metadaten.de/asmo/hasPlane">
-        <rdfs:domain rdf:resource="http://purls.helmholtz-metadaten.de/asmo/Shear"/>
         <rdfs:range rdf:resource="http://purls.helmholtz-metadaten.de/cmso/Plane"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has plane</rdfs:label>
     </owl:ObjectProperty>
+    
+
 
     <!-- http://purls.helmholtz-metadaten.de/asmo/hasRelaxationDOF -->
 
@@ -539,14 +542,19 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
         <rdfs:label>has relaxation DOF</rdfs:label>
     </owl:ObjectProperty>
     
+
+
     <!-- http://purls.helmholtz-metadaten.de/asmo/hasShearPlane -->
 
     <owl:ObjectProperty rdf:about="http://purls.helmholtz-metadaten.de/asmo/hasShearPlane">
+        <rdfs:subPropertyOf rdf:resource="http://purls.helmholtz-metadaten.de/asmo/hasPlane"/>
         <rdfs:domain rdf:resource="http://purls.helmholtz-metadaten.de/asmo/Shear"/>
         <rdfs:range rdf:resource="http://purls.helmholtz-metadaten.de/cmso/Plane"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The relation between a Shear spatial transformation and a specific plane within a material where shear deformation is applied.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has shear plane</rdfs:label>
     </owl:ObjectProperty>
+    
+
 
     <!-- http://purls.helmholtz-metadaten.de/asmo/hasSimulationParameter -->
 
@@ -615,8 +623,10 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
         <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Activity"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The relation between a calculated property and the activity through which it was obtained.</obo:IAO_0000115>
         <rdfs:label>was calculated by</rdfs:label>
-    </owl:ObjectProperty>    
+    </owl:ObjectProperty>
     
+
+
     <!-- http://purls.helmholtz-metadaten.de/cmso/hasVector -->
 
     <owl:ObjectProperty rdf:about="http://purls.helmholtz-metadaten.de/cmso/hasVector">
@@ -632,6 +642,8 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The relation between an entity and its vectors.</obo:IAO_0000115>
         <rdfs:label>has vector</rdfs:label>
     </owl:ObjectProperty>
+    
+
 
     <!-- http://www.w3.org/ns/prov#actedOnBehalfOf -->
 
@@ -1094,6 +1106,9 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
     <!-- http://purls.helmholtz-metadaten.de/asmo/ANNNImodel -->
 
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/ANNNImodel">
@@ -1104,6 +1119,7 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ANNNI Model</rdfs:label>
         <skos:altLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Axial Next-Nearest-Neighbour Ising Model</skos:altLabel>
     </owl:Class>
+    
 
 
     <!-- http://purls.helmholtz-metadaten.de/asmo/AbInitioMolecularDynamics -->
@@ -1679,6 +1695,8 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
         <skos:altLabel>RelaxationDOF</skos:altLabel>
     </owl:Class>
     
+
+
     <!-- http://purls.helmholtz-metadaten.de/asmo/Rotation -->
 
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/Rotation">
@@ -1696,6 +1714,8 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shear is a type of spatial transformation in which an object is distorted such that its shape changes while parallel lines remain parallel, but angles between them may change. This transformation shifts parts of the object in a specific direction, typically along one axis, while keeping the opposite axis fixed.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shear</rdfs:label>
     </owl:Class>
+    
+
 
     <!-- http://purls.helmholtz-metadaten.de/asmo/ShearModulus -->
 
@@ -1778,6 +1798,8 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Simulation Time</rdfs:label>
     </owl:Class>
     
+
+
     <!-- http://purls.helmholtz-metadaten.de/asmo/SpatialTransformation -->
 
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/SpatialTransformation">
@@ -1787,6 +1809,8 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The spatial transformations that involve translation or rotation are generally considered rigid body or Euclidean transformations, since the Euclidean distances within images are preserved. In contrast, the other ones are classified as non-rigid or elastic.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spatial Transformation</rdfs:label>
     </owl:Class>
+    
+
 
     <!-- http://purls.helmholtz-metadaten.de/asmo/SpecificHeatCapacity -->
 
@@ -1969,6 +1993,8 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Total Magnetic Moment</rdfs:label>
     </owl:Class>
     
+
+
     <!-- http://purls.helmholtz-metadaten.de/asmo/Translation -->
 
     <owl:Class rdf:about="http://purls.helmholtz-metadaten.de/asmo/Translation">
@@ -1976,6 +2002,8 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Translation is a type of spatial transformation described by the motion of every point of an object by the same distance in a given direction.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Translation</rdfs:label>
     </owl:Class>
+    
+
 
     <!-- http://purls.helmholtz-metadaten.de/asmo/VirialPressure -->
 
