@@ -4,7 +4,7 @@ Atomistic Simulation Methods Ontology (ASMO)
 
 ---
 
-## v0.0.3
+## v0.3.0
 
 Expansion to cover workflows of stacking fault energy calculations.
 
@@ -21,7 +21,7 @@ Expansion to cover workflows of stacking fault energy calculations.
 
 ---
 
-## v0.0.2
+## v0.2.0
 
 Major expansion of the ontology from 32 to 100 classes. This release introduces a broad vocabulary for physical quantities, simulation parameters, mechanical properties, and mathematical operations.
 
