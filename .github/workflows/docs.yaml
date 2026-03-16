@@ -14,14 +14,73 @@ jobs:
       with:
         ref: main
         path: main
-    - name: Widoco
+
+    - name: Download Widoco
+      run: wget -O widoco.jar https://github.com/dgarijo/Widoco/releases/download/v1.4.25/widoco-1.4.25-jar-with-dependencies_JDK-11.jar
+
+    - name: Widoco - current version
       run: |
-            wget -O widoco.jar https://github.com/dgarijo/Widoco/releases/download/v1.4.25/widoco-1.4.25-jar-with-dependencies_JDK-11.jar
-            java -jar widoco.jar -ontFile main/asmo.owl -outFolder docs -uniteSections -lang en-de -getOntologyMetadata -noPlaceHolderText -rewriteAll -webVowl
-            mv docs/doc/* docs/
-            cp docs/index-en.html docs/index.html
-            gawk -i inplace '{gsub("width=\"50/\"","width=\"75/\"",$0); print $0}' docs/index.html
-            rm widoco.jar
+        java -jar widoco.jar -ontFile main/asmo.owl -outFolder docs -uniteSections -lang en-de -getOntologyMetadata -noPlaceHolderText -rewriteAll -webVowl
+        mv docs/doc/* docs/
+        cp docs/index-en.html docs/index.html
+        gawk -i inplace '{gsub("width=\"50/\"","width=\"75/\"",$0); print $0}' docs/index.html
+
+    - name: Widoco - previous versions
+      run: |
+        mkdir -p docs/versions
+        for owl_file in $(ls main/previous-versions/asmo_v*.owl | sort); do
+          base=$(basename "$owl_file" .owl)
+          vpart="${base##*_v}"
+          A="${vpart:0:1}"
+          B="${vpart:1:1}"
+          C="${vpart:2:1}"
+          version="v${A}.${B}.${C}"
+          echo "Building docs for $version ..."
+          java -jar widoco.jar -ontFile "$owl_file" -outFolder "docs/versions/${version}_build" -uniteSections -lang en-de -getOntologyMetadata -noPlaceHolderText -rewriteAll -webVowl
+          mkdir -p "docs/versions/${version}"
+          mv "docs/versions/${version}_build/doc/"* "docs/versions/${version}/"
+          cp "docs/versions/${version}/index-en.html" "docs/versions/${version}/index.html"
+          gawk -i inplace '{gsub("width=\"50/\"","width=\"75/\"",$0); print $0}' "docs/versions/${version}/index.html"
+          rm -rf "docs/versions/${version}_build"
+        done
+
+    - name: Generate versions index
+      run: |
+        cat > docs/versions/index.html << 'HTMLEOF'
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+          <meta charset="UTF-8">
+          <title>ASMO – Previous Versions</title>
+          <style>
+            body { font-family: sans-serif; max-width: 800px; margin: 2rem auto; padding: 0 1rem; }
+            h1 { border-bottom: 1px solid #ccc; padding-bottom: 0.5rem; }
+            ul { line-height: 2; }
+          </style>
+        </head>
+        <body>
+          <h1>ASMO Ontology – Documentation Versions</h1>
+          <ul>
+        HTMLEOF
+        for owl_file in $(ls main/previous-versions/asmo_v*.owl | sort -r); do
+          base=$(basename "$owl_file" .owl)
+          vpart="${base##*_v}"
+          A="${vpart:0:1}"
+          B="${vpart:1:1}"
+          C="${vpart:2:1}"
+          version="v${A}.${B}.${C}"
+          echo "    <li><a href=\"${version}/index.html\">${version}</a></li>" >> docs/versions/index.html
+        done
+        cat >> docs/versions/index.html << 'HTMLEOF'
+          </ul>
+          <p><a href="../index.html">&larr; Back to current version</a></p>
+        </body>
+        </html>
+        HTMLEOF
+
+    - name: Cleanup
+      run: rm widoco.jar
+
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
       with:
