@@ -776,6 +776,7 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
     <!-- https://purls.helmholtz-metadaten.de/asmo/hasPlane -->
 
     <owl:ObjectProperty rdf:about="https://purls.helmholtz-metadaten.de/asmo/hasPlane">
+        <rdfs:domain rdf:resource="https://purls.helmholtz-metadaten.de/asmo/SpatialTransformation"/>
         <rdfs:range rdf:resource="http://purls.helmholtz-metadaten.de/cmso/Plane"/>
         <rdfs:label>has plane</rdfs:label>
     </owl:ObjectProperty>
@@ -867,8 +868,14 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
     <!-- https://purls.helmholtz-metadaten.de/asmo/wasCalculatedBy -->
 
     <owl:ObjectProperty rdf:about="https://purls.helmholtz-metadaten.de/asmo/wasCalculatedBy">
-        <rdfs:domain rdf:resource="https://purls.helmholtz-metadaten.de/asmo/CalculatedProperty"/>
-        <rdfs:domain rdf:resource="https://purls.helmholtz-metadaten.de/asmo/PhysicalQuantity"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Class rdf:about="https://purls.helmholtz-metadaten.de/asmo/CalculatedProperty"/>
+                    <owl:Class rdf:about="https://purls.helmholtz-metadaten.de/asmo/PhysicalQuantity"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Activity"/>
         <obo:IAO_0000115>The relation between a calculated property and the activity through which it was obtained.</obo:IAO_0000115>
         <rdfs:label>was calculated by</rdfs:label>
@@ -1095,6 +1102,18 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
      -->
 
     
+
+
+    <!-- http://purl.org/dc/terms/Agent -->
+
+    <owl:Class rdf:about="http://purl.org/dc/terms/Agent"/>
+
+
+
+    <!-- http://purl.org/dc/terms/LicenseDocument -->
+
+    <owl:Class rdf:about="http://purl.org/dc/terms/LicenseDocument"/>
+
 
 
     <!-- http://purls.helmholtz-metadaten.de/cmso/ComputationalSample -->
